@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Suporte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>O.P.A</h1>
+
+    <form action="https://watchtv--weenow1.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DHZ0000063Tgt" method="POST">
+      
+      <!-- Hidden values obrigatórios -->
+      <input type="hidden" name="orgid" value="00DHZ0000063Tgt">
+      <input type="hidden" name="retURL" value="https://descubra.watch.tv.br/faq/">
+      <input type="hidden" id="external" name="external" value="1">
+
+      <label for="name">Nome do Contato</label>
+      <input id="name" name="name" type="text" maxlength="80" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" maxlength="80" required>
+
+      <label for="type">Tipo</label>
+      <select id="type" name="type" required>
+        <option value="">--Selecione--</option>
+        <option value="Arte/Conteúdo">Arte/Conteúdo</option>
+        <option value="Comercial">Comercial</option>
+        <option value="Ferramenta/Mkt">Ferramenta/Mkt</option>
+        <option value="Financeiro">Financeiro</option>
+        <option value="Governança">Governança</option>
+        <option value="Infraestrutura">Infraestrutura</option>
+        <option value="Outras classificações">Outras classificações</option>
+        <option value="Plataforma">Plataforma</option>
+      </select>
+
+      <label for="subject">Assunto</label>
+      <input id="subject" name="subject" type="text" maxlength="80" required>
+
+      <label for="description">Descrição</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <label for="00NU6000006YPwn">Marca ou Modelo Afetado</label>
+      <input id="00NU6000006YPwn" name="00NU6000006YPwn" type="text" maxlength="255">
+
+      <label for="00NHZ000004Ywk9">Canal</label>
+      <select id="00NHZ000004Ywk9" name="00NHZ000004Ywk9">
+        <option value="">--Selecione--</option>
+        <option value="Aplicativo">Aplicativo</option>
+        <option value="Site">Site</option>
+        <option value="Outros">Outros</option>
+      </select>
+
+      <label for="00NHZ000004aZ3V">Data da Ocorrência</label>
+      <input id="00NHZ000004aZ3V" name="00NHZ000004aZ3V" type="date">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
